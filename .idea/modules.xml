@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bulls_and_Cows.iml" filepath="$PROJECT_DIR$/.idea/modules/Bulls_and_Cows.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bulls and Cows/task/Bulls_and_Cows.Bulls_and_Cows-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Bulls and Cows/task/Bulls_and_Cows.Bulls_and_Cows-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bulls and Cows/task/Bulls_and_Cows.Bulls_and_Cows-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Bulls and Cows/task/Bulls_and_Cows.Bulls_and_Cows-task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bulls and Cows/task/Bulls_and_Cows.Bulls_and_Cows-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Bulls and Cows/task/Bulls_and_Cows.Bulls_and_Cows-task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Bulls_and_Cows.Problems-Convert_a_date.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Bulls_and_Cows.Problems-Convert_a_date.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Bulls_and_Cows.Problems-Convert_a_date.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Bulls_and_Cows.Problems-Convert_a_date.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Bulls_and_Cows.Problems-Convert_a_date.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/Bulls_and_Cows.Problems-Convert_a_date.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/Bulls_and_Cows.Problems-Move_the_first_N_characters.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/Bulls_and_Cows.Problems-Move_the_first_N_characters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/Bulls_and_Cows.Problems-Move_the_first_N_characters.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/Bulls_and_Cows.Problems-Move_the_first_N_characters.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/Bulls_and_Cows.Problems-Move_the_first_N_characters.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/Bulls_and_Cows.Problems-Move_the_first_N_characters.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/Bulls_and_Cows.Problems-Piece_of_alphabet.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/Bulls_and_Cows.Problems-Piece_of_alphabet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/Bulls_and_Cows.Problems-Piece_of_alphabet.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/Bulls_and_Cows.Problems-Piece_of_alphabet.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/Bulls_and_Cows.Problems-Piece_of_alphabet.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/Bulls_and_Cows.Problems-Piece_of_alphabet.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Bulls_and_Cows.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Bulls_and_Cows.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Bulls_and_Cows.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Bulls_and_Cows.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Bulls_and_Cows.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Bulls_and_Cows.util.test.iml" />
+    </modules>
+  </component>
+</project>
