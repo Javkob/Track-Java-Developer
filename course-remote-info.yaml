@@ -27,6 +27,8 @@ stages:
   is_completed: false
 topics:
   0:
+  - title: Units of information
+    theory_id: 6865
   - title: Introduction to Java
     theory_id: 3500
   - title: Basic literals
@@ -37,6 +39,10 @@ topics:
     theory_id: 3749
   - title: Types and variables
     theory_id: 3518
+  - title: Sizes and ranges
+    theory_id: 3532
+  - title: Type casting
+    theory_id: 3510
   - title: Comments
     theory_id: 3520
   - title: Naming variables
@@ -47,21 +53,15 @@ topics:
     theory_id: 3519
   - title: Integer types and operations
     theory_id: 3565
-  1:
-  - title: Primitive and reference types
-    theory_id: 5035
-  - title: Array
-    theory_id: 3511
-  - title: Boolean and logical operations
-    theory_id: 3516
-  - title: Relational operators
-    theory_id: 3512
   - title: Increment and decrement
     theory_id: 5008
   - title: Characters
     theory_id: 3514
-  - title: String
-    theory_id: 3523
+  1:
+  - title: Boolean and logical operations
+    theory_id: 3516
+  - title: Relational operators
+    theory_id: 3512
   - title: Conditional statement
     theory_id: 3503
   - title: Ternary operator
@@ -72,25 +72,27 @@ topics:
     theory_id: 3498
   - title: Branching statements
     theory_id: 3507
+  - title: Calling a method
+    theory_id: 10973
+  - title: Primitive and reference types
+    theory_id: 5035
+  - title: Array
+    theory_id: 3511
+  - title: String
+    theory_id: 3523
   - title: Processing strings
     theory_id: 3551
   2:
-  - title: Units of information
-    theory_id: 6865
   - title: Introduction to OOP
     theory_id: 3614
-  - title: Functional decomposition
-    theory_id: 10570
-  - title: Sizes and ranges
-    theory_id: 3532
-  - title: Type casting
-    theory_id: 3510
   - title: Switch statement
     theory_id: 3504
-  - title: Defining methods
-    theory_id: 3590
+  - title: Declaring a method
+    theory_id: 10982
   - title: The main method
     theory_id: 3489
+  - title: Functional decomposition
+    theory_id: 10570
   - title: Write, compile, and run
     theory_id: 3739
   - title: Defining classes
@@ -120,6 +122,11 @@ topics:
     theory_id: 3552
   - title: Errors in programs
     theory_id: 3536
+  - title: Getters and setters
+    theory_id: 3599
+  - title: Inheritance
+    theory_id: 3583
+  5:
   - title: Package
     theory_id: 3621
   - title: Constructor
@@ -128,7 +135,3 @@ topics:
     theory_id: 3495
   - title: Access modifiers
     theory_id: 3589
-  - title: Getters and setters
-    theory_id: 3599
-  - title: Inheritance
-    theory_id: 3583
