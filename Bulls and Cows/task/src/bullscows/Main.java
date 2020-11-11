@@ -7,8 +7,9 @@ public class Main {
     public static String pseudoRandomNumberGenerator(int secretCodeLenght){
         //spaghetti :)
         final StringBuilder output = new StringBuilder();
+        Random random = new Random();
         String code = "";
-        long pseudoRandomNumber = System.nanoTime();
+        long pseudoRandomNumber = random.nextLong();
         if(secretCodeLenght <=10){
 
             code = String.valueOf(pseudoRandomNumber);
