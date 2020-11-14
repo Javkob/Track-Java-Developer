@@ -2,24 +2,35 @@ package bullscows;
 
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
-    public static String pseudoRandomNumberGenerator(int secretCodeLenght){
+    public static String pseudoRandomNumberGenerator(int secretCodeLenght,int symbolsRange){
         //spaghetti :)
+        //and more spaghetti X_x
         final StringBuilder output = new StringBuilder();
         Random random = new Random();
         String code = "";
         long pseudoRandomNumber = random.nextLong();
+        int lastRandomNum = 0;
         if(secretCodeLenght <=10){
-
             code = String.valueOf(pseudoRandomNumber);
-            code = code.replace("0","");
+            code = code.replace("-","");
             for (int i = 0; i < code.length(); i++) {
                 String character = code.substring(i, i + 1);
+                if (symbolsRange > 10) {
+                    int randomNum = ThreadLocalRandom.current().nextInt(10, symbolsRange);
+                    if(randomNum!=lastRandomNum){
+                        char symbol = Character.forDigit(randomNum, symbolsRange);
+                        output.append(symbol);
+                        lastRandomNum = randomNum;
+                    }else {
+                    }
+                }
                 if (output.indexOf(character) < 0) // if not contained
                     output.append(character);
             }
-                code = output.toString().substring(0,secretCodeLenght);
+            code = output.substring(0,secretCodeLenght);
             return code;
         }else{
             return "Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.";
@@ -29,14 +40,22 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String secretCode = "";
         String input = "";
+        String stars = "";
         System.out.println("Please, enter the secret code's length:");
         int secretCodeLenght = scanner.nextInt();
-        secretCode = pseudoRandomNumberGenerator(secretCodeLenght);
+        System.out.println("Input the number of possible symbols in the code:");
+        int symbolRange = scanner.nextInt();
+        for (int i = 0; i < secretCodeLenght; i++) {
+            stars += "*";
+        }
+        char lastSymbol = Character.forDigit(symbolRange-1, symbolRange);
+        System.out.println("The secret is prepared: " +stars +" (0-9, a-"+lastSymbol+").");
+        secretCode = pseudoRandomNumberGenerator(secretCodeLenght,symbolRange);
         String[] partsOfSecretCode = secretCode.split("");
         String[] partsOfInput;
         int turn = 1;
-        if (secretCodeLenght>10){
-            System.out.println(pseudoRandomNumberGenerator(secretCodeLenght));
+        if (secretCodeLenght>36){
+            System.out.println(pseudoRandomNumberGenerator(secretCodeLenght,symbolRange));
         }else {
             System.out.println("Okay, let's start a game!");
             while (!input.contains(secretCode)) {

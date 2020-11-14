@@ -21,7 +21,7 @@ stages:
   is_completed: true
 - id: 292
   step: 5434
-  is_completed: false
+  is_completed: true
 - id: 293
   step: 5435
   is_completed: false
@@ -85,8 +85,6 @@ topics:
   2:
   - title: Introduction to OOP
     theory_id: 3614
-  - title: Write, compile, and run
-    theory_id: 3739
   - title: Switch statement
     theory_id: 3504
   - title: Declaring a method
@@ -95,6 +93,8 @@ topics:
     theory_id: 3489
   - title: Functional decomposition
     theory_id: 10570
+  - title: Write, compile, and run
+    theory_id: 3739
   - title: Defining classes
     theory_id: 3618
   - title: Objects
