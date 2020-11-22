@@ -41,21 +41,40 @@ public class Main {
         String secretCode = "";
         String input = "";
         String stars = "";
+        String secretCodeLengthString="";
+        String symbolRangeString="";
+        int secretCodeLength = 0;
+        int symbolRange = 0;
         System.out.println("Please, enter the secret code's length:");
-        int secretCodeLenght = scanner.nextInt();
+        secretCodeLengthString = scanner.nextLine();
+        try {
+            secretCodeLength = Integer.parseInt(secretCodeLengthString);
+        }catch (NumberFormatException e){
+            System.out.println("Error: "+'"' + secretCodeLengthString +'"'+ " isn't a valid number.");
+            System.exit(0);
+        }
         System.out.println("Input the number of possible symbols in the code:");
-        int symbolRange = scanner.nextInt();
-        for (int i = 0; i < secretCodeLenght; i++) {
+        symbolRangeString = scanner.nextLine();
+        symbolRange = Integer.parseInt(symbolRangeString);
+        //Error: maximum number of possible symbols in the code is 36 (0-9, a-z).
+        if(secretCodeLength > symbolRange || secretCodeLength == 0){
+            System.out.println("Error: maximum number of possible symbols in the code is 36 (0-9, a-z).");
+            System.exit(0);
+        }else if (symbolRange > 36){
+            System.out.println("Error: maximum number of possible symbols in the code is 36 (0-9, a-z).");
+            System.exit(0);
+        }
+        for (int i = 0; i < secretCodeLength; i++) {
             stars += "*";
         }
         char lastSymbol = Character.forDigit(symbolRange-1, symbolRange);
         System.out.println("The secret is prepared: " +stars +" (0-9, a-"+lastSymbol+").");
-        secretCode = pseudoRandomNumberGenerator(secretCodeLenght,symbolRange);
+        secretCode = pseudoRandomNumberGenerator(secretCodeLength,symbolRange);
         String[] partsOfSecretCode = secretCode.split("");
         String[] partsOfInput;
         int turn = 1;
-        if (secretCodeLenght>36){
-            System.out.println(pseudoRandomNumberGenerator(secretCodeLenght,symbolRange));
+        if (secretCodeLength>36){
+            System.out.println(pseudoRandomNumberGenerator(secretCodeLength,symbolRange));
         }else {
             System.out.println("Okay, let's start a game!");
             while (!input.contains(secretCode)) {
@@ -65,13 +84,13 @@ public class Main {
                 int bull = 0;
                 int cow = 0;
                 partsOfInput = input.split("");
-                for (int i = 0; i < secretCodeLenght; i++) {
+                for (int i = 0; i < secretCodeLength; i++) {
                     if (partsOfInput[i].equals(partsOfSecretCode[i])) {
                         bull++;
                     }
                 }
-                for (int j = 0; j < secretCodeLenght; j++) {
-                    for (int k = 0; k < secretCodeLenght; k++) {
+                for (int j = 0; j < secretCodeLength; j++) {
+                    for (int k = 0; k < secretCodeLength; k++) {
                         if (partsOfInput[j].equals(partsOfSecretCode[k])) {
                             cow++;
                         }
