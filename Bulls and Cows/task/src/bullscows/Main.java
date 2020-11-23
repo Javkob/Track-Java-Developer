@@ -6,8 +6,6 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
     public static String pseudoRandomNumberGenerator(int secretCodeLenght,int symbolsRange){
-        //spaghetti :)
-        //and more spaghetti X_x
         final StringBuilder output = new StringBuilder();
         Random random = new Random();
         String code = "";
@@ -56,7 +54,6 @@ public class Main {
         System.out.println("Input the number of possible symbols in the code:");
         symbolRangeString = scanner.nextLine();
         symbolRange = Integer.parseInt(symbolRangeString);
-        //Error: maximum number of possible symbols in the code is 36 (0-9, a-z).
         if(secretCodeLength > symbolRange || secretCodeLength == 0){
             System.out.println("Error: maximum number of possible symbols in the code is 36 (0-9, a-z).");
             System.exit(0);
@@ -67,6 +64,8 @@ public class Main {
         for (int i = 0; i < secretCodeLength; i++) {
             stars += "*";
         }
+
+
         char lastSymbol = Character.forDigit(symbolRange-1, symbolRange);
         System.out.println("The secret is prepared: " +stars +" (0-9, a-"+lastSymbol+").");
         secretCode = pseudoRandomNumberGenerator(secretCodeLength,symbolRange);
