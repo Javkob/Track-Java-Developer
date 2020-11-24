@@ -1,16 +1,5 @@
 type: edu
 files:
-- name: src/bullscows/Main.java
-  visible: true
-  text: |
-    package bullscows;
-
-    public class Main {
-        public static void main(String[] args) {
-            System.out.println("Hello World!");
-        }
-    }
-  learner_created: false
 - name: test/BullsCowsTest.java
   visible: false
   text: |-
@@ -411,6 +400,12 @@ files:
   visible: true
   learner_created: true
 - name: src/bullscows/MainGame.java
+  visible: true
+  learner_created: true
+- name: src/bullscows/Messages.java
+  visible: true
+  learner_created: true
+- name: src/bullscows/Main.java
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/53/stages/293/implement
