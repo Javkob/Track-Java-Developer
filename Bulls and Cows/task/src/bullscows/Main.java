@@ -34,6 +34,7 @@ public class Main {
             return "Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.";
         }
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String secretCode = "";
@@ -61,9 +62,10 @@ public class Main {
             System.out.println("Error: maximum number of possible symbols in the code is 36 (0-9, a-z).");
             System.exit(0);
         }
-        for (int i = 0; i < secretCodeLength; i++) {
-            stars += "*";
-        }
+
+//        for (int i = 0; i < secretCodeLength; i++) {
+//            stars += "*";
+//        }
 
 
         char lastSymbol = Character.forDigit(symbolRange-1, symbolRange);

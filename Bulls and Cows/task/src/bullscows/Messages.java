@@ -22,8 +22,8 @@ public class Messages {
     void displayMessageErrorNotPossibleToGenerateCode(int size, int symbols){
         System.out.printf("Error: it's not possible to generate a code with a length of %d with %d unique symbols.\n", size, symbols);
     }
-    void displayMessageSecretCodeIsPrepared(int stars,char lastSymbol){
-        System.out.printf("The secret is prepared: %d (0-9, a-%c).\n",stars,lastSymbol);
+    void displayMessageSecretCodeIsPrepared(String stars,char lastSymbol){
+        System.out.printf("The secret is prepared: %s (0-9, a-%c).\n",stars,lastSymbol);
     }
     void displayMessageStartGame(){
         System.out.println("Okay, let's start a game!");
