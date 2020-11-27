@@ -396,19 +396,16 @@ files:
         }
     }
   learner_created: false
-- name: src/bullscows/Game.java
-  visible: true
-  learner_created: true
 - name: src/bullscows/MainGame.java
   visible: true
   learner_created: true
 - name: src/bullscows/Messages.java
   visible: true
   learner_created: true
-- name: src/bullscows/Main.java
+- name: src/bullscows/GameController.java
   visible: true
   learner_created: true
-- name: src/bullscows/GameController.java
+- name: src/bullscows/InputValidator.java
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/53/stages/293/implement
